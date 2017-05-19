@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#d3e0c6"
     tools:context="kr.p_e.mprof.www.intro.LoginActivity">
 
     <EditText
@@ -14,7 +15,13 @@
         android:inputType="textPersonName"
         android:text="ID"
         tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="199dp" />
+        tools:layout_editor_absoluteY="199dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_below="@+id/button5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <EditText
         android:id="@+id/editText2"
@@ -23,5 +30,28 @@
         android:ems="10"
         android:inputType="textPassword"
         tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="251dp" />
-</android.support.constraint.ConstraintLayout>
+        tools:layout_editor_absoluteY="251dp"
+        android:layout_below="@+id/editText"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText" />
+
+    <Button
+        android:id="@+id/button5"
+        android:background="@drawable/logbtn"
+        android:layout_width="500dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editText"
+        android:background="@drawable/logbtncl"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_toRightOf="@+id/editText"
+        android:layout_alignBottom="@+id/editText2" />
+</RelativeLayout>
