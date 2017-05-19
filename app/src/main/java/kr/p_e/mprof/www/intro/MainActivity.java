@@ -11,6 +11,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -20,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
     AlertDialog.Builder dialog;
     EditText id,pw;
-    Button login_button;
+    ImageButton login_button;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,9 +30,9 @@ public class MainActivity extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
 
-        login_button = (Button)findViewById(R.id.button7);
-        id = (EditText)findViewById(R.id.editText);
-        pw = (EditText)findViewById(R.id.editText2);
+        login_button = (ImageButton)findViewById(R.id.imageButton);
+        id = (EditText)findViewById(R.id.id);
+        pw = (EditText)findViewById(R.id.pw);
 
         login_button.setOnClickListener(new View.OnClickListener() {
             @Override
