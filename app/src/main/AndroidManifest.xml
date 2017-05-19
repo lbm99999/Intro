@@ -26,7 +26,7 @@
         <activity android:name=".JapanAct" />
         <activity android:name=".Settings" />
         <activity android:name=".EngAct" />
-        <activity android:name=".BtnMenu"></activity>
+        <activity android:name=".BtnActivity"></activity>
     </application>
 
 </manifest>
