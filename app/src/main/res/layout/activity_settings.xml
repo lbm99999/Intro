@@ -45,7 +45,7 @@
     <Button
         android:id="@+id/button6"
         android:layout_width="400dp"
-        android:background="@drawable/SettingImage"
+        android:background="@drawable/settingimage"
         android:layout_height="80dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
