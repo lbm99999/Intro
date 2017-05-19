@@ -19,7 +19,7 @@ public class Settings extends AppCompatActivity {
 
 
         //Button
-        Button button = (Button) findViewById(R.id.button);
+        Button button = (Button) findViewById(R.id.button2);
         button.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v)
             {
@@ -27,7 +27,7 @@ public class Settings extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        Button button1 = (Button) findViewById(R.id.button2);
+        Button button1 = (Button) findViewById(R.id.button);
         button1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(Settings.this, JapanAct.class);

@@ -4,7 +4,102 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:background="#D5D5D5"
     tools:context="kr.p_e.mprof.www.intro.KoreaAct">
+
+
+    <SearchView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/imageButton3"
+        android:layout_alignStart="@+id/imageButton3"
+        android:id="@+id/searchView">
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:id="@+id/Search"
+            android:background="#FFFFFF"/>
+    </SearchView>
+
+    <TextClock
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:textSize="27dp"
+        android:gravity="center_horizontal"
+        android:timeZone="GMT+0900"
+        android:format24Hour="MMM dd, yyyy k:mm"
+        android:format12Hour="@null"
+        android:layout_above="@+id/imageButton3"
+        android:layout_alignLeft="@+id/imageButton3"
+        android:layout_alignStart="@+id/imageButton3"
+        android:layout_marginBottom="40dp"
+        android:layout_alignRight="@+id/food"
+        android:layout_alignEnd="@+id/food"
+        />
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Manzi 님"
+        android:textSize="20dp"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_toLeftOf="@+id/imageView2"
+        android:id="@+id/textView" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/user"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/imageButton2"
+        android:layout_alignEnd="@+id/imageButton2"
+        android:layout_marginTop="14dp"
+        android:id="@+id/imageView2" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/taste"
+        android:layout_above="@+id/imageButton2"
+        android:layout_alignLeft="@+id/imageButton2"
+        android:layout_alignStart="@+id/imageButton2"
+        android:id="@+id/imageButton3" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/convi"
+        android:layout_above="@+id/Polaris"
+        android:layout_alignLeft="@+id/Polaris"
+        android:layout_alignStart="@+id/Polaris"
+        android:id="@+id/imageButton2" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/polar"
+        android:id="@+id/Polaris"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/food"
+        android:layout_toStartOf="@+id/food" />
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/food"
+        android:id="@+id/food"
+        android:layout_alignTop="@+id/Polaris"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="17dp"
+        android:layout_marginEnd="17dp" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/prefer"
+        android:layout_below="@+id/food"
+        android:layout_alignLeft="@+id/food"
+        android:layout_alignStart="@+id/food" />
 
 </RelativeLayout>

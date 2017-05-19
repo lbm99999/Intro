@@ -19,9 +19,9 @@ public class MainActivity extends AppCompatActivity {
     //Constants
     private final int LOGIN_SUSSESS = 1;
 
-    AlertDialog.Builder dialog;
-    EditText id,pw;
-    ImageButton login_button;
+        AlertDialog.Builder dialog;
+        EditText id,pw;
+        ImageButton login_button;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
