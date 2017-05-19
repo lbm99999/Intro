@@ -22,5 +22,5 @@
         android:layout_height="wrap_content"
         android:text="login"
         android:id="@+id/login"
-        android:background="#0000000"/>
+        android:background="#d3e0c6"/>
 </RelativeLayout>
