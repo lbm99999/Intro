@@ -16,7 +16,9 @@
         android:layout_below="@+id/textView"
         android:layout_alignLeft="@+id/imageButton3"
         android:layout_alignStart="@+id/imageButton3"
-        android:id="@+id/searchView">
+        android:id="@+id/searchView"
+        android:layout_alignRight="@+id/imageView2"
+        android:layout_alignEnd="@+id/imageView2">
 
         <EditText
             android:layout_width="200dp"
@@ -31,8 +33,6 @@
         android:textSize="27dp"
         android:gravity="center_horizontal"
         android:timeZone="GMT+0900"
-        android:format24Hour="MMM dd, yyyy k:mm"
-        android:format12Hour="@null"
         android:layout_above="@+id/imageButton3"
         android:layout_alignLeft="@+id/imageButton3"
         android:layout_alignStart="@+id/imageButton3"
@@ -61,27 +61,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/taste"
+        android:id="@+id/imageButton3"
         android:layout_above="@+id/imageButton2"
-        android:layout_alignLeft="@+id/imageButton2"
-        android:layout_alignStart="@+id/imageButton2"
-        android:id="@+id/imageButton3" />
+        android:layout_centerHorizontal="true" />
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/convi"
+        android:id="@+id/imageButton2"
         android:layout_above="@+id/Polaris"
-        android:layout_alignLeft="@+id/Polaris"
-        android:layout_alignStart="@+id/Polaris"
-        android:id="@+id/imageButton2" />
+        android:layout_centerHorizontal="true" />
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/polar"
         android:id="@+id/Polaris"
-        android:layout_marginBottom="15dp"
+        android:layout_marginBottom="16dp"
         android:layout_alignParentBottom="true"
-        android:layout_toLeftOf="@+id/food"
-        android:layout_toStartOf="@+id/food" />
+        android:layout_alignLeft="@+id/imageButton2"
+        android:layout_alignStart="@+id/imageButton2" />
 
 
     <ImageButton
@@ -89,11 +87,9 @@
         android:layout_height="wrap_content"
         android:src="@drawable/food"
         android:id="@+id/food"
-        android:layout_alignTop="@+id/Polaris"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="17dp"
-        android:layout_marginEnd="17dp" />
+        android:layout_below="@+id/imageButton2"
+        android:layout_alignRight="@+id/imageButton2"
+        android:layout_alignEnd="@+id/imageButton2" />
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
